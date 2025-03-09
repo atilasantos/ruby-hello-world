@@ -1,0 +1,12 @@
+apiVersion: v2
+name: ruby-hello
+description: A Helm chart to deploy a simple Ruby on Rails web app.
+type: application
+version: 0.0.1
+appVersion: "0.0.1"
+dependencies:
+- name: nginx-ingress-controller
+  version: "11.6.11"
+  repository: "https://charts.bitnami.com/bitnami"
+  condition: nginxproxy.enabled
+  alias: nginxproxy
