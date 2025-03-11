@@ -40,3 +40,22 @@
 .terraform/
 *.tfvars
 *.tfvars.json
+
+# Ignore Terraform files
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# Ignore local terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Ignore Terragrunt cache
+.terragrunt-cache/
+
+# Ignore provider files containing sensitive information (if any)
+provider.tf
+
+# Ignore any local files specific to your environment (e.g., AWS credentials)
+*.pem
+*.key
